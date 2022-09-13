@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style_pack.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <script>
+        function warp(param) {
+            window.location.replace(param);
+        }
+        function warp2(param) {
+            window.open(param, '_blank');
+        }
+    </script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 onclick="warp('./index.html')">MY SITE</h1>
+        <nav>
+            <ul class="main-menu ">
+                <li class="item "><a href="./index.html">Home</a></li>
+                <li>
+                    <a class="item">LAB &#8711;</a>
+                    <ul class="second-menu">
+                        <li>
+                            <a>LAB1 &#8250;</a>
+                            <ul class="third-menu">
+                                <li><a href="./LAB/lab1/lab1.1.html">LAB1_1</a></li>
+                                <li><a href="./LAB/lab1/lab1.2.html">LAB1_2</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a>LAB2 &#8250;</a>
+                            <ul class="third-menu">
+                                <li><a href="./LAB/lab2/lab2.1.html">LAB2_1</a></li>
+                                <li><a href="./LAB/lab2/lab2.2.html">LAB2_2</a></li>
+                                <li><a href="./LAB/lab2/lab2.3.html">LAB2_3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>LAB3 &#8250;</a>
+                            <ul class="third-menu">
+                                <li><a href="./LAB/lab3/exam1.html">LAB3_1</a></li>
+                                <li><a href="./LAB/lab3/exam2.html">LAB3_2</a></li>
+                                <li><a href="./LAB/lab3/exam3.html">LAB3_3</a></li>
+                                <li><a href="./LAB/lab3/exam4.html">LAB3_4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./home_work.html">Homework</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <section onclick="warp2('https:\/\/www.facebook.com\/Arinchawut')">
+            <div class="fb img"></div>
+            <p>Arin Chawut</p>
+        </section>
+        <section onclick="warp2('https:\/\/www.instagram.com\/oat_arx\/')">
+            <div class="ig img"></div>
+            <p>oat_arx</p>
+        </section>
+        <section onclick="warp2('https:\/\/steamcommunity.com/profiles/76561198200431890/')">
+            <div class="steam img"></div>
+            <p>ArinSwaggy</p>
+        </section>
+    </article>
+
+    <footer>
+        <div class="i-wrap">
+            <div>
+                <p>Student id</p>
+                <p>643020423-0</p>
+            </div>
+            <div>
+                <p>Name</p>
+                <p>นายอริญชวุธ กัลยานาม</p>
+            </div>
+        </div>
+
+        <div class="i-wrap">
+            <div>
+                <p>SC362201 WEB DESIGN TECHNOLOGIES</p>
+                <p>เทคโนโลยีการออกแบบเว็บ</p>
+            </div>
+            <div>
+                <p>Section</p>
+                <p>1</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

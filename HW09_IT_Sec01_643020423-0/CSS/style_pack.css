@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box ;
+    padding: 0  ;
+    margin: 0 ;
+    font-family: 'Kanit', sans-serif ;
+    
+}
+
+.active {
+    color: #c5b686 ;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff ;
+    padding: 50px 20px 0px ;
+    text-align: center ;
+    box-shadow: rgba(0, 0, 0, 0.07) 1px 3px 4px ;
+    position: relative ;
+    z-index: 1 ;
+}
+
+header>h1 {
+    font-family: 'Oooh Baby', cursive ;
+    color: #100F0F ;
+    font-size: 50px ;
+}
+
+header>h1:hover {
+    cursor: pointer ;
+}
+
+nav {
+    padding: 0px 70px ;
+    margin-top: 50px ;
+    position: relative ;
+}
+
+ul {
+    list-style-type: none ;
+}
+
+.main-menu {
+    position: relative ;
+    width: fit-content ;
+    margin: 0 auto ;
+}
+
+.main-menu>li {
+    display: inline-block ;
+    width: 175px ;
+    text-align: center ;
+    margin-right: 20px ;
+}
+
+.main-menu li p,
+.main-menu li a {
+    padding: 15px 15px ;
+    font-size: 16px ;
+    width: 180px ;
+    display: block ;
+}
+
+.main-menu>li>a {
+    padding: 15px 15px 25px ;
+}
+
+ul li a,
+ul li p {
+    display: block ;
+    text-decoration: none ;
+    color: #0F3D3E ;
+    transition: 0.2s ;
+}
+
+.second-menu,
+.third-menu {
+    background-color: #ffffff ;
+    display: block ;
+    position: absolute ;
+    display: none ;
+    box-shadow: rgba(0, 0, 0, 0.07) 1px 1px 4px ;
+
+}
+
+.third-menu {
+    margin-left: 100% ;
+    margin-top: -54px ;
+}
+
+/* Disable none */
+.main-menu>li a:hover,
+.second-menu>li p:hover,
+.third-menu>li a:hover {
+    color: #a1a1a1 ;
+    font-size: 15.5px ;
+    cursor: pointer ;
+}
+
+.main-menu li:hover .second-menu {
+    display: block ;
+}
+
+.second-menu li:hover .third-menu {
+    display: block ;
+}
+
+footer {
+    background-color: #100F0F ;
+    display: flex ;
+    font-family: 'Kanit', sans-serif ;
+    padding: 40px 100px ;
+}
+
+footer .i-wrap div {
+    margin: 35px 100px ;
+    color: white ;
+}
+
+footer .i-wrap div p {
+    font-size: 18px ;
+    margin-bottom: 10px ;
+}
+
+footer .i-wrap div p:nth-of-type(2) {
+    font-size: 12px ;
+    color: rgb(196, 196, 196) ;
+}

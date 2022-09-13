@@ -1,0 +1,548 @@
+/* import font from google font */
+/*
+font-family: 'Rubik', sans-serif; 
+font-family: 'Roboto', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Roboto&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+
+/**** margin และ padding จะไม่อธิบายนะครับ เพราะมันเป็นแค่การจัด layout****/
+
+
+
+
+/* 
+    รีเซ็ทค่าของ web browser (chrome) และกำหนด font family 
+    นำ margin, border, padding มาคำนวนขนาดของ block element
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ทำให้เส้นของตารางเหลือเส้นเดียว */
+table {
+    border-collapse: collapse;
+}
+
+/* กำหนดขอบให้ tr และ td */
+th,
+td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* กำหนดสีเทาให้หัวตาราง */
+table tr th {
+    background-color: #d8d8d8;
+}
+
+/* กำหนด font fam ภายใน body เปลี่ยนพื้นหลังเป็นสีขาว และปัดตกข้อความ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    white-space: normal;
+}
+
+/* 
+    กำหนดรูปพื้นหลังให้ div class cover ปรับให้รูปขนาดเท่ากับ div 
+    ปรับตำแหน่งกึ่งกลางของภาพ และให้ฟอนต์ภายใน div มีเงา
+*/
+.cover {
+    height: 600px;
+    background: url(https://images.wallpaperscraft.com/image/single/ball_barbell_crossfit_191514_1920x1080.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-shadow: 1px 1px 15px black;
+    padding: 40px 60px;
+}
+
+/* กำหนดให้ h1 ภายใน div.cover มีสีขาว ฟอนต์ใหญ่ขึ้น มีระยะห่างระหว่างตัวอักษร 6px */
+.cover h1 {
+    color: white;
+    font-size: 65px;
+    letter-spacing: 6px;
+    margin: 0 0 15px;
+}
+
+/* กำหนดให้ p ภายใน div.cover มีฟอนต์ มีสีขาว ฟอนต์ 15px มีระยะห่างระหว่างบรรทัด 30px */
+.cover p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 60px 0 20px;
+}
+
+/* ความสูงตามขนาดคอนเทนต์ พื้นหลังสีขาว */
+article {
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 40px;
+    padding: 20px 150px 150px;
+}
+
+/* 
+    ความห่างระหว่างบรรทัด 27px
+    จัดฟอนต์ให้ชิดขอบ block
+    ทำให้ฟอนต์ตัวบางลง
+    กำหนดฟอนต์แฟม
+    ย่อหน้า 20px
+*/
+article p {
+    line-height: 27px;
+    text-align: justify;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 20px;
+    margin-bottom: 15px;
+    /* letter-spacing: 1px; */
+    /* word-spacing: 2px; */
+}
+
+/* 
+    กว้าง 500px
+    ระยะห่างระหว่างบรรทัด 25px
+    จัดกึ่งกลางฟอนต์ใน block
+    ทำให้ฟอนต์ตัวหนาขึ้น
+    กำหนดฟอนต์แฟม
+    ย่อหน้า 20px
+
+*/
+blockquote {
+    width: 500px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 20px;
+    margin: 40px auto 10px;
+}
+
+article hr {
+    margin: 60px 0;
+}
+
+/* 
+    flex element ภายใน block
+    center element
+*/
+.athleteCover section {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    กำหนดฟอนต์แฟม
+    กำหนดขนาดฟอนต์
+    กำหนดกึ่งกลาง
+*/
+.athleteCover h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.athleteCover>h3 {
+    margin: 45px 0 20px;
+}
+
+/*
+    กำหนดสีให้ h4 ภายใน div.athleteCover และ strong element
+*/
+.athleteCover h4,
+strong {
+    color: rgb(0, 102, 255);
+    margin: 20px 10px 25px;
+}
+
+.plan ul {
+    margin: 0 0 40px 20px;
+}
+
+/*
+    กำหนดฟอนต์แฟมของ li ภายใน div.plan ul 
+*/
+.plan ul li {
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px 0;
+}
+
+/*
+    กำหนดให้ div.Img เป็นชนิด inline-block
+*/
+.athleteCover section .Img {
+    display: inline-block;
+    margin: 20px 0 40px;
+}
+
+/*
+    กำหนดความกว้างตามคอนเทนต์
+    กำหนดขอบ 3px solid สีฟ้า
+    ปรับกึ่งกลางฟอนต์
+*/
+div.info {
+    width: fit-content;
+    border-top: 3px solid rgb(0, 102, 255);
+    text-align: center;
+    margin: 60px auto;
+}
+
+/*
+    กำหนดรูปให้ div
+    กำหนดความกว้างและความยาว (300px, 400px)
+    กำหนดให้รูปแสดงผลแบบเต็ม div
+    ปรับตำแหน่งกึ่งกลางของรูปภายใน div
+
+    ทำแบบนี้อีกหลายๆรูป
+*/
+.athleteCover section .Img.chris1 {
+    background: url(https://www.muscleandfitness.com/wp-content/uploads/2019/10/Chris-Bumstead-Shirtless-Hands-On-Hip.jpg?quality=86&strip=all) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.athleteCover section .Img.chris2 {
+    background: url(https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/0b7bdebf49158463cc3a975418f3590c.jpeg?x-expires=1660104000&x-signature=oaEX%2Fae0wiU3wy7uHZTb6BIDWKY%3D) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+.athleteCover section .Img.jay1 {
+    background: url(https://i.pinimg.com/736x/e7/91/4f/e7914f0b64caede99b9415cbf2ba31da--jay-cutler-muscle-fitness.jpg) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 79%;
+}
+.athleteCover section .Img.jay2 {
+    background: url(https://media.gettyimages.com/photos/mr-olympia-winner-ifbb-professional-bodybuilder-jay-cutler-visits-the-picture-id450885894?s=612x612) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 23%;
+}
+.athleteCover section .Img.phil1 {
+    background: url(https://i.pinimg.com/originals/00/00/6e/00006e272971f286d74a6e975d75dace.jpg) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 30%;
+}
+.athleteCover section .Img.phil2 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/cc/Phil_Heath.JPG) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 91%;
+}
+.athleteCover section .Img.arnold1 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Arnold_Schwarzenegger_1974.jpg/220px-Arnold_Schwarzenegger_1974.jpg) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+.athleteCover section .Img.arnold2 {
+    background: url(https://cdn.britannica.com/11/222411-050-D3D66895/American-politician-actor-athlete-Arnold-Schwarzenegger-2016.jpg) no-repeat;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 91%;
+}
+
+/*
+    กำหนดสีพื้นหลัง
+    กำหนดให้ nav ชิดด้านบน
+*/
+nav {
+    background-color: #100F0F;
+    top: 0;
+    padding: 5px 20px;
+    /* position: sticky; */
+}
+
+/*
+    กำหนดสีพื้นหลัง
+    flex element
+    กำหนดฟอนต์แฟม
+*/
+footer {
+    background-color: #100F0F;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    padding: 40px 100px;
+}
+
+/* 
+    กำหนดให้ข้อความภายใน div ที่อยู่ใน footer div.i-wrap มีสีขาว
+*/
+footer .i-wrap div {
+    margin: 35px 50px;
+    color: white;
+}
+
+/*
+    กำหนดให้ p มีขนาด 18px
+*/
+footer .i-wrap div p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/*
+    กำหนดให้ p ตัวที่ 2 ภายใน footer div.i-wrap div
+    มีขนาด 12px สีเทา
+*/
+footer .i-wrap div p:nth-of-type(2) {
+    font-size: 12px;
+    color: rgb(196, 196, 196);
+}
+
+/*
+    กำหนดรูปให้ div class fvlot
+    กำหนดความกว้าง ความยาว
+    กำหนดให้รูปเต็ม div
+    กำหนดให้เมาส์เป็น pointer
+    
+    div class mr-olympia ก็ทำเหมือนกัน
+*/
+.fvolt {
+    background: url(https://fitnessvolt.com/wp-content/uploads/2016/09/fitness-volt-bw.png) no-repeat;
+    width: 328px;
+    height: 108px;
+    background-size: cover;
+    cursor: pointer;
+    margin: 0 50px;
+}
+.mr-olympia {
+    background: url(https://mrolympia.com/sites/mrolympia.com/files/logo-2022-updated.png) no-repeat;
+    width: 328px;
+    height: 108px;
+    background-size: contain;
+    margin: 0 50px;
+    cursor: pointer;
+    background-position: 50% 50%;
+}
+
+/* กำนหดให้ ul (ภายใน nav) ไม่มีชนิดการแสดง */
+ul {
+    list-style-type: none;
+}
+
+/* กำหนดให้ a (ภายใน nav) เป็นสีขาว ไม่มีขีด */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* กำหนดขอบของ li class item มีขอบด้านล่างเมื่อชี้ */
+.menu li.item:hover {
+    border-bottom: 3px solid rgb(0, 102, 255);
+}
+
+/* กำหนดให้ a ที่อยู่ใน li class logo ไม่มีเส้นใต้เมื่อชี้ */
+.logo a:hover {
+    text-decoration: none;
+}
+
+/*
+    กำหนดขนาดฟอนต์ใน li
+    ไม่ปัดตกข้อความ
+*/
+.menu li {
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 15px 20px;
+}
+
+/*
+    กำหนดฟอนต์ a ใน  li class logo
+*/
+.logo a{
+    font-size: 20px;
+}
+
+/*
+    กำหนดให้ ul class menu flex
+    กำหนดให้ wrap ตามขนาด element ลูก
+    กำหนดให้คอนเทนต์ชิดขอบซ้ายและขวา
+    กำหนดให้กึ่งกลางแกน y
+*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+    ให้ li class logo อยู่อันดับแรก
+    กำหนดระยะ flex เป็น 1
+*/
+
+.logo {
+    order: 0;
+    flex: 1;
+}
+
+/* ให้ li class item อยู่อันดับสอง */
+.item {
+    order: 1;
+    margin: 0 10px;
+}
+
+/*
+    กำหนดเงาให้ div class competitorCover
+*/
+.competitorCover {
+    box-shadow: 0px 42px 31px -50px #888888;
+    padding: 40px;
+}
+
+/*
+    h1 ภายใน div class competitorCover
+    กำหนดฟอนต์แฟม
+    กำหนดกึ่งกลาง
+    กำหนดขนาด
+    กำหนดให้ทุกตัวเป็นตัวใหญ่
+    สีฟ้า
+*/
+.competitorCover h1 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: rgb(0, 102, 255);
+}
+
+/*
+    h2 ภายใน div class competitorCover
+    กำหนดฟอนต์แฟม
+    กำหนดกึ่งกลาง
+    กำหนดให้ทุกตัวเป็นตัวใหญ่
+*/
+.competitorCover h2 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+/*
+    ใช้ grid ในการจัด element
+    กำหนด สัดส่วน เป็น 4 ส่วนคือ 1:1:1:1
+    กำหนดกึ่งกลางให้ element ใน grid
+*/
+.competitor {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    padding: 20px;
+}
+
+/*
+    กำหนดให้ p
+    กว้าง 180px
+    ปรับกึ่งกลาง
+    ปัดตกข้อความ
+    กำหนดให้ตัวแรกของคำเป็นตัวใหญ่
+    กำหนดระหะห่างระหว่างบรรทัด
+*/
+.competitorCover .competitor .competitorList p {
+    width: 180px;
+    text-align: center;
+    white-space: normal;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+
+.compete {
+    margin-bottom: 15px;
+}
+
+/*
+    กำหนดชนิดเมาส์เมื่อชี้ที่ div.compete
+*/
+.compete:hover {
+    cursor: pointer;
+}
+
+/*
+    กำหนดให้ p class pLink เมื่อเมาส์ชี้
+    กำหนดชนิดเมาส์
+    กำหนดสี
+*/
+.pLink:hover {
+    cursor: pointer;
+    color: rgb(122, 175, 255);
+}
+
+/*
+    กำหนดรูปให้ div (set เหมือนเดิม)
+    ที่ใช้ 2 จุด เพราะ ในคลาสมีเว้นวรรคแบ่งชนิดคลาส
+    เลขไม่เรียงเพราะ
+*/
+.compete.c1 {
+    width: 180px;
+    height: 180px;
+    background: url(https://yt3.ggpht.com/ytc/AMLnZu_HbHoerK829E4dr-e1CpNEHSayhhUm-UZ1p4yQsQ=s900-c-k-c0x00ffffff-no-rj) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.compete.c3 {
+    width: 180px;
+    height: 180px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Phil_Heath.JPG/220px-Phil_Heath.JPG) no-repeat;
+    background-size: cover;
+    background-position: 50% 29%;
+}
+.compete.c4 {
+    width: 180px;
+    height: 180px;
+    background: url(https://cdn.shopify.com/s/files/1/0791/7731/files/Arnold_from_Pumping_Iron_large.jpg?v=1472855115) no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+.compete.c6 {
+    width: 180px;
+    height: 180px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5LDd18UvGlbeK8IExVdVtyaSDIAP2sbmoA&usqp=CAU) no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+/*
+    กำหนดให้ ul มี li เป็นสีเหลี่ยม
+*/
+div.plan ul {
+    list-style: square;
+}
+
+/*
+    กำหนดให้ a ภายใน p
+    สีฟ้า
+    ตัวเอียง
+*/
+.link-in-p {
+    color: rgb(0, 102, 255);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+/* เมื่อเเมาส์ชี้ให้ลดสีลง */
+.link-in-p:hover {
+    color: rgb(122, 175, 255);
+}

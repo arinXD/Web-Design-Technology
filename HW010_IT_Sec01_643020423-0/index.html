@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assign10</title>
+    <link rel="icon" href="./img/arin.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onscroll="fixdeHeader()">
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center pt-5">
+        <!-- <h1 class="navbar-brand mb-0 display-1">My Site</h1> -->
+        <h1 class="display-5 color-white" onclick="warp2('./home.html')" style="font-family: 'Satisfy', cursive;">MY SITE</h1>
+    </nav>
+    <!-- NAV -->
+    <nav id="nav-header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <nav class="navbar logo pl-0 pr-4">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand mr-0" href="./home.html">
+                            <img src="./img/arin.png" alt="Logo" width="30" height="24"
+                                class="d-inline-block align-text-top">
+                            Arin Blog
+                        </a>
+                    </div>
+                </nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" onclick="popUp()">About</a>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="ค้นหาสิ่งที่น่าสนใจ เช่น ผม.."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- breadcrumb -->
+        <div class="container px-0 my-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb px-5">
+                    <li class="breadcrumb-item"><a href="./home.html">ArinBlog</a></li>
+                    <li class="breadcrumb-item active">Travel</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container mt-5">
+            <div class="toppic">
+                <h1 class="page-title">เช็คอิน 10 ที่เที่ยวทะเลหมอกหนาวนี้ชวนแฟนไปกอดกัน</h1>
+                <p>ลมหนาวมาเมื่อไร ใจฉันมันสุดเหงา หนาวนี้รีบหาคู่แล้วพากันขึ้นภูไปดูทะเลหมอกกันค่ะ
+                    วันนี้เราจะมาแนะนำที่เที่ยวดูทะเลหมอกสวยๆ นั่งรอดูพระอาทิตย์ขึ้นยามเช้าท่ามกลางสายลมหนาว
+                    และสำหรับใครที่ต้องการที่พักสุดหรู ในราคาถูกใจ ก็อย่าลืมจองที่พักกับ Traveloka
+                    ให้คุณได้ที่พักในราคาสุดพิเศษ
+                    ดูทะเลหมอกได้อย่างสบายใจ สบายกระเป๋า </p>
+            </div>
+
+            <div class="container mt-5 mb-5 px-0">
+                <h4>1. ภูชี้ฟ้า เชียงราย</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%A0%E0%B8%B9%E0%B8%8A%E0%B8%B5%E0%B9%89%E0%B8%9F%E0%B9%89%E0%B8%B22-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ภูชี้ฟ้า 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%A0%E0%B8%B9%E0%B8%8A%E0%B8%B5%E0%B9%89%E0%B8%9F%E0%B9%89%E0%B8%B21-800x521.jpg?tr=dpr-2,w-675"
+                        alt="ภูชี้ฟ้า 2">
+                </div>
+                <p>คงไม่มีใครไม่รู้จักสถานที่ดูทะเลหมอกยอดฮิตอย่างภูชี้ฟ้า
+                    ชะง่อนหินที่ยื่นออกไปจากหน้าผาเป็นแลนด์มาร์คสำคัญที่ทำให้ทุกคนที่ได้เห็นต้องรู้อย่างแน่นอนว่าเป็นที่ไหน
+                    ด้วยความสูงจากระดับน้ำทะเลปานกลาง 1,200 - 1,600 เมตร
+                    ทำให้มองเห็นทะเลหมอกได้ไกลสุดลูกหูลูกตาเป็นอีกที่ที่จะทำให้คุณพบเจอกับประสบการณ์สุดฟิน</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/chiang-rai-10011104?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>2. ดอยหลวง เชียงดาว เชียงใหม่</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%872-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ดอยหลวง 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%871-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ดอยหลวง 2">
+                </div>
+                <p>สถานที่ดูทะเลหมอก ตั้งเต๊นท์ จิบกาแฟชิลๆ ไปกับบรรยากาศของยอดเขาความสูง 2,225
+                    เมตรจากระดับน้ำทะเลปานกลางแต่แนะนำสำหรับคนที่มีแรงปีนเขาได้แบบไม่ลำบากเพราะทางขึ้นดอยหลวงต้องเดิน
+                    เดิน
+                    และเดินเท่านั้น ดอยหลวงจะเปิดให้เข้าเฉพาะช่วงหน้าหนาวควรรีเช็คข้อมูลให้ดี
+                    แต่วิวท้องฟ้าตอนกลางคืนและทะเลหมอกในช่วงเช้านั้นรับรองว่าสวยประทับใจจนคุณไม่รู้ลืม</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/chiang-mai-10000054?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>3. กิ่วแม่ปาน อุทยานแห่งชาติดอยอินทนนท์ จังหวัดเชียงใหม่</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%A7%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%9B%E0%B8%B2%E0%B8%991-800x504.jpg?tr=dpr-2,w-675"
+                        alt="กิ่วแม่ปาน 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%A7%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%9B%E0%B8%B2%E0%B8%992-800x534.jpg?tr=dpr-2,w-675"
+                        alt="กิ่วแม่ปาน 2">
+                </div>
+                <p>สถานที่ถ่ายรูปและดูทะเลหมอกยอดฮิตใครที่เคยเห็นรูปวิวท้องฟ้า สูงจากระดับน้ำทะเลปานกลาง 2,000 เมตร
+                    นอกจากจะได้เห็นทะเลหมอกแล้วยังมีสถานที่ท่องเที่ยวบนดอยอินทนนท์ให้แวะตลอดทั้งทางไม่ว่าจะเป็นน้ำตก
+                    เส้นทางเดินป่า เอาใจสายธรรมชาติกันสุดๆ</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/chiang-mai-10000054?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>4. ดอยอ่างขาง จังหวัดเชียงใหม่</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B2%E0%B8%871-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ดอยอ่างขาง 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B8%B2%E0%B8%872-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ดอยอ่างขาง 2">
+                </div>
+                <p>เป็นสถานีวิจัยการเกษตรที่ตั้งอยู่บนเทือกเขาตะนาวศรี สูงจากระดับน้ำทะเล 1,928 เมตร
+                    มีพื้นที่ให้ชมทะเลหมอกหลายจุด และมีอากาศหนาวเย็นตลอดทั้งปี
+                    นอกจากจะมีทะเลหมอกให้เที่ยวแล้วยังมีสถานที่ท่องเที่ยวเชิงเกษตรให้อีกหลายจุดให้เที่ยวชมอย่างจุใจ
+                    เหมาะสำหรับใครที่หาโลเคชั่นถ่ายรูปที่หลากหลายสวยถูกใจแน่นอน</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/chiang-mai-10000054?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>5. ภูทับเบิก จังหวัดเพชรบูรณ์</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ed.edtfiles-media.com/static-cache/resize-cache/790x528/ud/images/1/26/76028/IMG_1173.jpg"
+                        alt="ภูทับเบิก 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://sites.google.com/site/visitinphetchabun/_/rsrc/1417113718234/sthan-thi-thxng-theiyw/phu-thab-beik/734515-topic-ix-2.jpg"
+                        alt="ภูทับเบิก 2">
+                </div>
+                <p>ถือเป็นอีกฟนึ่งสถานที่ท่องเที่ยวขึ้นชื่อของจังหวัดเพชรบูรณ์
+                    เป็นยอดเขาที่สูงที่สุดในจังหวัดทำให้ได้รับความนิยมเป็นอย่างมาก นอกจากจะได้ชมความงามของทะเลหมอกแล้ว
+                    รอบๆ
+                    ภูทับเบิกก็มีคาร์เฟ่ ร้านอาหาร โรงแรมให้แวะเที่ยวได้ตลอดทางอิ่มหนำสำราญทั้งทริปแน่นอน</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/phetchabun-10000032?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>6. ห้วยน้ำดัง จังหวัดเชียงใหม่</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%871-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ห้วยน้ำดัง 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%872-800x520.jpg?tr=dpr-2,w-675"
+                        alt="ห้วยน้ำดัง 2">
+                </div>
+                <p>อีกสถานที่หนึ่งในจังหวัดเชียงใหม่ที่ขึ้นชื่อ ใครที่อยากสัมผัสอากาศหนาว วิวสวย ๆ
+                    สามารถดูทะเลหมอกได้แบบพาโนรามาเราแนะนำที่นี่เลย นอกจากจะมีทะเลหมอกให้ชมแล้วยังมีสวนกาแฟแวะให้เที่ยว
+                    ทัศนียภาพจากห้วยน้ำดังจะสามารถมองเห็นดอยหลวงเชียงดาวยาวสุดลูกหูลูกตาน่าถ่ายรูปมากๆ
+                    วิวเต็มสิบให้ล้านเลย
+                </p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/chiang-mai-10000054?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>7. ดอยเสมอดาว จังหวัดน่าน</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://www.tripgether.com/wp-content/uploads/tripgetter/Doi-Smer-daw_21.jpg"
+                        alt="ดอยเสมอดาว 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://travel.mthai.com/app/uploads/2013/08/3167189452_8d5842f096.jpg" alt="ดอยเสมอดาว 2">
+                </div>
+                <p>จุดชมวิวที่สวยงามที่สุดแห่งหนึ่งของจังหวัดที่รายล้อมไปด้วยขุนเขาอย่างจังหวัดน่าน
+                    มีจุดให้ชมทั้งทะเลหมอก
+                    พระอาทิตย์ขึ้นพระอาทิตย์ตกอากาศเย็นสบายรายล้อมไปด้วยธรรมชาติ เปิดให้เข้าชมได้ตลอดทั้งปี
+                    แต่ในช่วงฤดูหนาวผู้คนก็หนาตา สำหรับคนที่ชอบความสดชื่นเย็นสบายไปเที่ยวฤดูฝนก็ยังโอเค
+                    ที่สำคัญยังมีมุมให้ถ่ายรูปเยอะมากๆ ทั้งลานดูดาว หรือเนินเขาที่ตัดกับขอบฟ้าถูกใจสายช่างภาพแน่นอน</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/nan-10000213?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>8. ดอยแม่ระเมิง จังหวัดตาก</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%A1%E0%B8%B4%E0%B8%872-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ดอยแม่ระเมิง 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%A1%E0%B8%B4%E0%B8%871-800x534.jpg?tr=dpr-2,w-675"
+                        alt="ดอยแม่ระเมิง 2">
+                </div>
+                <p>จุดชมวิวทะเลหมอกที่สวยที่สุดอยู่ที่ม่อนกิ่วลม สามารถมองเห็นวิวได้ 180 องศา
+                    ไม่จุดชมวิวแต่ทั้งดอยแม่ระเมิงเองก็มีสถานที่ท่องเที่ยงเชิงธรรมชาติอีกหลายจุด
+                    ทั้งน้ำตกชาวดอยที่ให้แวะเล่นก่อนที่จะไปสัมผัสบรรยากาศและความสวยงามของทะเลหมอกบนกิ่วแม่ลม</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/tak-10000108?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>9. ดอยผาชู้ จังหวัดน่าน</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://go2nan.com/wp-content/uploads/2019/10/%E0%B8%9C%E0%B8%B2%E0%B8%8A%E0%B8%B9%E0%B9%892.jpg"
+                        alt="ดอยผาชู้ 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://www.chinsangtrip.com/files_content/source/location/185/loc185_1.jpg"
+                        alt="ดอยผาชู้ 2">
+                </div>
+                <p>ยังอยู่กันที่จังหวัดน่านเพราะความเป็นเมืองแห่งขุนเขาไม่แปลกที่จะมีจุดให้ชมทะเลหมอกได้อย่างหลากหลาย
+                    ดอยผาชู้ตั้งอยู่บนพื้นที่อุทยานแห่งชาติศรีน่าน บนดอยมีพื้นที่สำหรับกางเต๊นท์และบ้านพักให้บริการ
+                    ทำให้คุณสามารถตื่นมาดูวิวทะเลหมอกยามเช้า ดื่มด่ำกับการมองเพราะอาทิตย์ขึ้น สัมผัสกับอากาศหนาวบนยอดดอย
+                    ใครที่ไปกับแฟนต้องฟินกันสุดๆ</p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/nan-10000213?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5 px-0">
+                <h4>10. เนินช้างศึก จังหวัดกาญจนบุรี</h4>
+                <div class="row mb-2 mx-auto">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B9%80%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%A8%E0%B8%B6%E0%B8%811-800x532.jpg?tr=dpr-2,w-675"
+                        alt="ดอยผาชู้ 1">
+                    <img class="img-fluid col-lg-6"
+                        src="https://ik.imagekit.io/tvlk/blog/2018/10/%E0%B9%80%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%A8%E0%B8%B6%E0%B8%812-800x470.jpg?tr=dpr-2,w-675"
+                        alt="ดอยผาชู้ 2">
+                </div>
+                <p>ตั้งอยู่บนพื้นที่อุทยานแห่งชาติทองผาภูมิ เป็นจุดชมทะเลหมอกที่งดงามอีกแห่งหนึ่งของประเทศไทย
+                    โดยเป็นจุดที่สามารถมองเห็นทิวเขาในฝั่งประเทศพม่า บรรยากาศเย็นสบาย
+                    อีกหนึ่งไฮไลต์ของที่นี่คือวันไหนที่ฟ้าเปิดจะสามารถมองเห็นทะเลอันดามันฝั่งพม่าได้อีกด้วยเรียกได้ว่าเห็นได้ทั้งทะเลและภูเขาในที่เดียวเลย
+                </p>
+                <div class="book-wrap mt-5">
+                    <p class="font-weight-bold text-center">จองที่พักกับ Traveloka</p>
+                    <img onclick='warp("https:/\/www.traveloka.com/th-th/hotel/thailand/region/kanchanaburi-10000176?utm_source=blog.traveloka.com&utm_medium=referral&utm_campaign=AD-TH-HO-OM-BLOG-Listicle-Dom&utm_term=check_in_10_foggy_sea_for_winter")'
+                        class="book-ticket"
+                        src="https://s3-ap-southeast-1.amazonaws.com/cntatr-assets-ap-southeast-1-250226768838-55a62c9399d4d8a6/2018/10/CTA2018_01_BookHotel.png"
+                        alt="book-ticket">
+                </div>
+            </div>
+            <div class="container mt-5 mb-5">
+                <p>
+                    และนี่คือสถานที่ไว้เที่ยวชมทะเลหมอกที่เราอยากจะมาแนะนำให้ทุกๆ คนบางทีก็ไปง่าย บางทีก็ต้องสมบุกสมบัน
+                    ผจญภัยกันบ้าง และถ้าใครที่วางแผนจะไปดูทะเลหมอกกันละก็ อย่าลืมจองที่พักกับ Traveloka
+                    ที่จะช่วยให้คุณได้ที่พักสุดพิเศษในราคาที่ถูกใจ มีส่วนลดให้ในทุกๆ ที่ให้สัมผัสอากาศหนาว
+                    สายหมอกและวิวสุดสวยอย่างสบายใจ สบายกระเป๋า
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5 py-4">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="info col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-left">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <p class="font-weight-bold">Arin Blog</p>
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit nihil aliquid error?
+                            Omnis dolor, nesciunt est vitae blanditiis nulla.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="info col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-left">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 font-weight-bold">Website</h6>
+                        <p>
+                            <a href="https://getbootstrap.com/" class="text-reset" target="_blank">Bootstrap</a>
+                        </p>
+                        <p>
+                            <a href="https://www.w3schools.com/bootstrap5/" class="text-reset"
+                                target="_blank">W3Schools</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-left">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Thailand, KKC 48000, TH</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            arinblog@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +66 98 765 4321</p>
+                        <p><i class="fas fa-print me-3"></i> +66 98 766 4321</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold"
+                href="https://www.traveloka.com/th-th/explore/destination/check-in-10-foggy-sea-for-winter/51556">Traveloka.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

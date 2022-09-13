@@ -1,0 +1,55 @@
+h1{
+    color: yellowgreen;
+}
+p{
+    color: black;
+}
+.center{
+    /* margin: auto;
+    margin-left: 50%; */
+    text-align: center;
+    margin: 0%;
+}
+div{
+    background-color: azure;
+}
+
+ol li ul li{
+    color: brown;
+    margin: 0%;
+    padding: 0%;
+}
+ol li ul{
+    margin: 5px;
+    padding-left: 15px;
+
+}
+.newBlock{
+    padding: 20px;
+    
+}
+.newBlock p {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: pink;
+}
+a:hover{
+    background-color:plum;
+}
+a:active{
+    /* color: yellow; */
+}
+a{
+    font-size: 40px;
+}
+
+.newBlock p::first-letter{
+    color:red;
+    font-size: 30px;
+}

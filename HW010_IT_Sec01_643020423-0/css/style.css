@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@media only screen and (max-width: 768px) {
+    .navbar.logo{
+        display: none;
+    }
+    .nav-item,.navbar.logo{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .navbar-toggler{
+        margin-bottom: 10px;
+    }
+    .img-fluid{
+        margin-bottom: 10px;
+    }
+    .container div.book-wrap{
+        margin-top: 20px !important;
+    }
+    .container.mt-5.mb-5.px-0{
+        margin-top: 80px !important;
+    }
+    footer .row div.info,.info{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .navbar.logo{
+        display: none;
+    }
+    .nav-item,.navbar.logo{
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .navbar-toggler{
+        margin-bottom: 10px;
+    }
+    .img-fluid{
+        margin-bottom: 10px;
+    }
+    footer .row div.info,.info{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .navbar.logo{
+        display: initial;
+    }
+    footer .row div.info,.info{
+        display: initial !important;
+    }
+    .container.mt-5.mb-5.px-0{
+        margin-top: 100px !important;
+    }
+}
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+.fix-content {
+    padding-top: 70px;
+}
+
+.img-fluid {
+    padding: 0 5px;
+}
+
+.arin-brand {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.arin-brand:hover {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+}
+
+.page-title {
+    text-align: center;
+}
+
+.toppic {
+    margin: 100px 0;
+}
+
+.toppic h1 {
+    margin-bottom: 1em;
+}
+
+.toppic p {
+    font-size: 1.25em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 0 35px;
+}
+
+.color-white {
+    color: white;
+}
+
+.slide-show-img {
+    height: 38em;
+    width: 100%;
+    /* height: auto; */
+    /* max-width: 1686px; */
+}
+
+#nav-header {
+    transition: 0.4s;
+    z-index: 99;
+}
+
+body p {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.pic-wrap {
+    width: fit-content;
+}
+
+.place-pic {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.pic-wrap p {
+    text-decoration: underline;
+}
+
+.book-ticket:hover{
+    cursor: pointer;
+}
+.book-wrap{
+    width: fit-content;
+    margin: 0 auto;
+}
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1.display-5.color-white:hover{
+    cursor: pointer;
+}
+.container h4{
+    margin-bottom: 1em;
+}

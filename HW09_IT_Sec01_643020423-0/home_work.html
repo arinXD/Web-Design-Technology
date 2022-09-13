@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style_pack.css">
+    <link rel="stylesheet" href="./CSS/home_work.css">
+    <script>
+        function warp(param) {
+            window.location.replace(param);
+        }
+        function warp2(param) {
+            window.open(param, '_blank');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 onclick="warp('./index.html')">MY SITE</h1>
+        <nav>
+            <ul class="main-menu ">
+                <li class="item "><a href="./index.html">Home</a></li>
+                <li>
+                    <a class="item">LAB &#8711;</a>
+                    <ul class="second-menu">
+                        <li>
+                            <a>LAB1 &#8250;</a>
+                            <ul class="third-menu">
+                                <li><a href="./LAB/lab1/lab1.1.html">LAB1_1</a></li>
+                                <li><a href="./LAB/lab1/lab1.2.html">LAB1_2</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a>LAB2 &#8250;</a>
+                            <ul class="third-menu">
+                                <li><a href="./LAB/lab2/lab2.1.html">LAB2_1</a></li>
+                                <li><a href="./LAB/lab2/lab2.2.html">LAB2_2</a></li>
+                                <li><a href="./LAB/lab2/lab2.3.html">LAB2_3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>LAB3 &#8250;</a>
+                            <ul class="third-menu">
+                                <li><a href="./LAB/lab3/exam1.html">LAB3_1</a></li>
+                                <li><a href="./LAB/lab3/exam2.html">LAB3_2</a></li>
+                                <li><a href="./LAB/lab3/exam3.html">LAB3_3</a></li>
+                                <li><a href="./LAB/lab3/exam4.html">LAB3_4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="active">Homework</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="homework-cover">
+    </div>
+    <h1 class="homework-title">Homework</h1>
+    <article>
+        <section>
+            <div class="homework a">
+                <div class="img a" onclick="warp2('./HW/HW04/index.html')"></div>
+                <p onclick="warp2('./HW/HW04/index.html')">Homework 1</p>
+            </div>
+            <div class="homework b">
+                <div class="img b" onclick="warp2('./HW/HW05/index.html')"></div>
+                <p onclick="warp2('./HW/HW05/index.html')">Homework 2</p>
+            </div>
+        </section>
+        <section>
+            <div class="homework c">
+                <div class="img c" onclick="warp2('./HW/HW06/index.html')"></div>
+                <p onclick="warp2('./HW/HW06/index.html')">Homework 3</p>
+            </div>
+            <div class="homework d">
+                <div class="img d" onclick="warp2('./HW/HW08/homePage.html')"></div>
+                <p onclick="warp2('./HW/HW08/homePage.html')">Homework 4</p>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="i-wrap">
+            <div>
+                <p>Student id</p>
+                <p>643020423-0</p>
+            </div>
+            <div>
+                <p>Name</p>
+                <p>นายอริญชวุธ กัลยานาม</p>
+            </div>
+        </div>
+
+        <div class="i-wrap">
+            <div>
+                <p>SC362201 WEB DESIGN TECHNOLOGIES</p>
+                <p>เทคโนโลยีการออกแบบเว็บ</p>
+            </div>
+            <div>
+                <p>Section</p>
+                <p>1</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+.active {
+    color: #c5b686;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    padding: 50px 20px 0px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 1px 3px 4px;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'Oooh Baby', cursive;
+    color: #100F0F;
+    font-size: 50px;
+}
+
+header h1:hover {
+    cursor: pointer;
+}
+
+nav {
+    padding: 0px 70px;
+    margin-top: 50px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-menu {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.main-menu>li {
+    display: inline-block;
+    width: 175px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.main-menu li p,
+.main-menu li a {
+    padding: 15px 15px;
+    font-size: 16px;
+    width: 180px;
+    display: block;
+}
+
+.main-menu>li>a {
+    padding: 15px 15px 25px;
+}
+
+ul li a,
+ul li p {
+    display: block;
+    text-decoration: none;
+    color: #0F3D3E;
+    transition: 0.2s;
+}
+
+.second-menu,
+.third-menu {
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 1px 1px 4px;
+
+}
+
+.third-menu {
+    margin-left: 100%;
+    margin-top: -54px;
+}
+
+/* Disable none */
+.main-menu>li a:hover,
+.second-menu>li p:hover,
+.third-menu>li a:hover {
+    color: #a1a1a1;
+    font-size: 15.5px;
+    cursor: pointer;
+}
+
+.main-menu li:hover .second-menu {
+    display: block;
+}
+
+.second-menu li:hover .third-menu {
+    display: block;
+}
+
+/* CONTENT */
+article {
+    background-color: #ffffff;
+    padding: 100px;
+    clear: both;
+    z-index: 0;
+}
+
+article>h1 {
+    margin-bottom: 30px;
+}
+
+
+.content p {
+    color: #0F3D3E;
+    word-break: break-all;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 1.25em;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    column-gap: 5em;
+}
+
+.content.a img {
+    width: 40%;
+    height: auto;
+    max-width: 450px;
+    display: block;
+    transition: 0.2s;
+}
+
+.content.info {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.content.info .personal-img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 50%;
+    transition: 0.2s;
+    margin-bottom: 50px;
+    border: 2px solid #FFFFFF;
+}
+
+.content.info .personal-img:hover,
+.content.a img:hover {
+    transform: scale(1.1);
+}
+
+.content.info p {
+    font-size: 25px;
+    line-height: 1.75em;
+    text-align: center;
+    color: #c5b686;
+}
+
+footer {
+    background-color: #100F0F;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    padding: 40px 100px;
+}
+
+
+footer .i-wrap div {
+    margin: 35px 100px;
+    color: white;
+}
+
+
+footer .i-wrap div p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+footer .i-wrap div p:nth-of-type(2) {
+    font-size: 12px;
+    color: rgb(196, 196, 196);
+}
+
+.blog-img {
+    z-index: -1;
+    background: url(https://img.freepik.com/free-photo/calathea-orbifolia-by-white-wall_53876-146282.jpg?w=996&t=st=1662393777~exp=1662394377~hmac=3ae9021830fe088b63bb097a08fbd6b3d32bb230e878b358b08b4e75a8001133) no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    filter: blur(0.9px);
+    float: left;
+}
+
+.blog-font {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 217px 222px;
+    line-height: 65px;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.05);
+    display: block;
+}
+
+section {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+}
+
+section div p {
+    margin-top: 15px;
+    width: 250px;
+    color: #0F3D3E;
+    word-break: break-all;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+section div {
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: fit-content;
+}
+
+section div div.img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: 50% 100%;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+section div div.img:hover {
+    transform: scale(1.05);
+}
+
+.pengiun {
+    background: url(https://s.isanook.com/mv/0/ud/9/47869/p1.jpg) no-repeat;
+}
+
+.totoro {
+    background: url(https://i.pinimg.com/originals/82/9b/20/829b20f4e6dc6c5857f8c0a178c46e09.jpg) no-repeat;
+}
+
+.kick {
+    background: url(https://pbs.twimg.com/media/FLfanf5XoAIVZtP.jpg:large) no-repeat;
+}
+
+.favorite-cartoon {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 100px;
+}
+
+div.info-wrap {
+    background-color: #100F0F;
+    padding: 100px 0;
+    clear: both;
+}

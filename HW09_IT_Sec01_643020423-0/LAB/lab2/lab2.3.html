@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px 0px;
+        }
+        div+h1{
+            color: green;
+            font-style: italic;
+        }
+        input{
+            border-radius: 20px;
+            height: 20px;
+        }
+        h1:first-of-type {
+            color: green;
+            text-decoration: underline;
+            text-align: center;
+        }
+        div a:first-child{
+            color:blue;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        div>a{
+            color: red;
+            font-size: 20px;
+        }
+        .list, ul:first-child{
+            border: 1px solid black;
+
+        }
+        .list ~ p {
+            background-color: blue;
+            color: white;
+        }
+        footer{
+            background-color: gray;
+            text-align: center;
+        }
+        form input:first-child {
+            border: 5px solid red;
+        }
+        form input:nth-of-type(2){
+            border: 5px solid greenyellow;
+            background-color: blue;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+
+    <body>
+        <h1>Example for CS</h1>
+        <p>This webpage is a practice CSS <a href="#">Link</a></p>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Learning Code</a>
+            <a href="#">About us</a>
+
+        </div>
+        <h1>This is Form</h1>
+
+        <div>
+
+            <form action="#">
+                <input type="text" placeholder="Type Text"><br>
+                <input type="text" placeholder="Type Text">
+            </form>
+
+            <div class="list">
+                This div class name is list
+                <ul>
+                    <li>list 1</li>
+                    <ul>
+                        <li>Child</li>
+                    </ul>
+                    <li>List 2</li>
+                </ul>
+            </div>
+            <p>Paragraph line 1 <br>
+                Paragraph line 2 <br>
+                Paragraph line 3
+            </p>
+        </div>
+
+        <footer>
+            web design technology
+        </footer>
+    </body>
+
+    </html>
+
+</body>
+
+</html>

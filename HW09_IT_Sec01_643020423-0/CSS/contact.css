@@ -1,0 +1,43 @@
+article{
+    padding: 100px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+}
+.fb{
+    background: url(https://www.facebook.com/images/fb_icon_325x325.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.ig{
+    background: url(../IMG/ig.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.steam{
+    background: url(https://logos-world.net/wp-content/uploads/2020/10/Steam-Logo.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+article{
+    display: flex;
+    column-gap: 100px;
+    width: fit-content;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    background-color: rgb(236, 236, 236, 0.75);
+    border-radius: 5px;
+}
+section:hover{
+    cursor: pointer;
+}
+section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

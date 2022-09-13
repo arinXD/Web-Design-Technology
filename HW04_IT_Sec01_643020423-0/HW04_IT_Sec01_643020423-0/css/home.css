@@ -1,0 +1,222 @@
+/* 
+เลือกทุก element บนหน้า HTML 
+เปลี่ยนฟอนต์ และ assume ว่าทุก element มีค่า default margin, padding คือ 0 
+box-sizing: border-box; คือ คำนวนขนาดของ element (width-height) โดยนำ border, padding มาคิดด้วย
+*/
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+กำหนดความกว้างและความสูงเป็น 100%
+bg-color สีขาว ความทึบเป็น 90%
+ใช้ padding shorthand กำหนดระยะห่างระหว่างขอบของ element ด้านใน 20px
+*/
+#contentWarp{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(58, 58, 58);
+    opacity: 1;
+    padding: 100px;
+
+}
+
+/* 
+กำหนดความกว้าง 100% และ ความยาว 350px
+set bg-color to black
+ใช้ margin กำหนดระยะห่างระหว่างของขอบด้านนอก element top=0 left,right=auto bottom=20px
+ใช้ padding shorthand กำหนดระยะห่างระหว่างขอบของ element ด้านใน 30px
+display flex คือ ปรับให้ element ลูกมีความยืดหยุ่นตามความต้องการ
+*/
+.contentBox{
+    width: 100% ;
+    height: fit-content;
+    background-color: white;
+    color: #000;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+    border-radius:10px ;
+    transition: all 0.02s;
+}
+
+.contentBox:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* รูปภาพ */
+/*
+กำหนด bg ให้เป็นรูปภาพ และใส่ value no repeat เพื่อไม่ให้แสดงรูปซ้ำ
+background-position; กำหนด x,y ของรูปที่จะโชว์
+background-size: cover; กำหนดให้โชว์รูปแบบเต็ม element div
+cursor: pointer; กำหนดให้เป็น pointer เมื่อเอาเมาส์มาวางบน element
+*/
+div#img1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background: url(https://images8.alphacoders.com/617/thumbbig-617427.webp) no-repeat;
+    background-position: 50% 4%;
+    background-size: cover;
+    cursor: pointer;
+    border-radius:10px 0 0 10px ;
+    /* box-shadow: -40px 0px 8px rgb(44, 44, 44) inset; */
+}
+div#img2{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background: url(../img/cap_cover3.jpg) no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+    cursor: pointer;
+    border-radius:10px 0 0 10px ;
+    /* box-shadow: -40px 0px 8px rgb(44, 44, 44) inset; */
+
+}
+
+
+/* 
+กำหนดความกว้าง และ ความยาว 100%
+กำหนดสีฟอนต์เป็นสีขาว
+*/
+.movieTitle {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+/* ใช้ grouping selector กำหนดฟอนต์ให้อยู่ตรงกลาง */
+.IMDb, .populate, .rotten{
+    text-align: center;
+}
+
+/* ใช้ grouping selector กำหนดระยะห่างด้านนอก 20px */
+.populate, .rotten{
+    margin-left: 20px;
+}
+
+/*
+กำหนดรูปให้ element div ปรับขนาดตามความต้องการ และให้รูปแสดงผลแบบเต็ม element
+*/
+.ironmanIMDb{
+    background: url(../img/ironmanIMDb.png) no-repeat;
+    width: 114px;
+    height: 37px;
+}
+.ironmanPoppulate{
+    background: url(../img/ironman_populate.png) no-repeat;
+    width: 145px;
+    height: 36px;
+    background-size: cover;
+}
+.ironmanRotten{
+    background: url(../img/ironman_rotten.png) no-repeat;
+    width: 145px;
+    height: 36px;
+    background-position: 50% 50%;
+}
+.capIMDb{
+    background: url(../img/cap_IMDb.png) no-repeat;
+    width: 114px;
+    height: 37px;
+}
+.capPoppulate{
+    background: url(../img/cap_populate.png) no-repeat;
+    width: 145px;
+    height: 36px;
+    background-size: cover;
+}
+.capRotten{
+    background: url(../img/ironman_rotten.png) no-repeat;
+    width: 145px;
+    height: 36px;
+    background-position: 50% 50%;
+}
+
+/* ใช้ grouping selector flex element ลูก และปรับกึ่งกลาง ปรับให้ชิดซ้าย  */
+.describe{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.cover{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* ปรับฟอนต์ให้อยู่ตรงกลาง ปรับระยะห่างด้านนอกเป็น 30px */
+.MTL{
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* ใช้ pseudo element ให้บรรทัดแรกของคลาสขยับซ้าย 20px */
+.describe::first-letter{
+    padding-left: 20px ;
+    
+}
+
+/* ปรับขอบนอก ด้านบนให้มีระยะห่าง 30px */
+.describe{
+    margin-top: 30px;
+}
+
+/* ใช้ margin 0 auto ปรับกึ่งกลาง และ flex element ลูก */
+.genres{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* กำหนดขอบของ element ปรับความโค้ง และปรับระยะห่างด้านนอกกับด้านใน */
+.genre{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 0 5px 0 0;  
+}
+
+/*
+กำหนดพื้นหลังเป็นสีดำ และปรับกึ่งกลางของ element
+ปรับความโค้ง ปรับฟอนต์ให้กึ่งกลาง ปรับระยะห่างด้านใน
+ */
+.moreInfo{
+    width: 300px;
+    background-color: white;
+    margin: 60px auto 0px;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ใช้ pseudo class เพิ่มลูกเล่นเมื่อใช้เมาส์วางบน element */
+.moreInfo:hover{
+    cursor: pointer;
+    border-bottom: 5px solid red;
+}
+
+#test{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.MTL a:link{
+    color: black;
+}

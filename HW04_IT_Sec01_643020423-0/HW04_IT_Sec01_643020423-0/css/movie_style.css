@@ -1,0 +1,152 @@
+/* 
+เลือกทุก element บนหน้า HTML 
+เปลี่ยนฟอนต์ และ assume ว่าทุก element มีค่า default margin, padding คือ 0 
+box-sizing: border-box; คือ คำนวนขนาดของ element (width-height) โดยนำ border, padding มาคิดด้วย
+*/
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* กำหนดระยะห่างด้านนอกเป็น 0 ใช้ flex จัด element ลูกให้อยู่ในสัดส่วนแนวนอนเท่าๆกัน และปรับกึ่งกลางตัวหนังสือ */
+.child {
+    margin: 0;
+    display: flex;
+    text-align: center;
+
+}
+
+/* ตัวหนังสือสีขาว ขนาดฟอนต์ 100% ตามสัดส่วน flex  */
+div.menu {
+    color: white;
+    width: 100%;
+}
+
+/* ใช้ grid จัดสัดส่วน element ลูก (สัดส่วน1:2) กำหนดสี และระยะห่างภายใน */
+.IPCover{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+}
+
+/* ความกว้างเต็มจอ กำหนดระยะห่างภายใน กำหนดตำแหน่งให้เลื่อนตามการ scroll มี top = 0 เพื่อให้ชิดขอบจอด้านบนตอนเลื่อน */
+.headerWrap {
+    max-width: 100%;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    position: sticky;
+    top: 0;
+}
+
+/* กำหนดสีของลิงค์ */
+.menu a:link, a:link {
+    color: white;
+}
+
+/* กำหนดให้ลิงค์ไม่เปลี่ยนแปลงเมื่อทำ action ต่างๆ */
+.menu a, .menu a:focus, .menu a:active, a, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* กำหนดให้ลิงค์มีขอบด้านล่างสีแดงเมื่อวางเมาส์บนลิงค์ และปรับระยะห่างด้านในลงมา 5px */
+a.movie:hover{
+    padding-bottom: 5px;
+    border-bottom: 5px solid red;
+}
+/* กำหนดขนาดฟอนต์ */
+.menu a{
+    font-size: 18px;
+}
+
+/* All IMG */
+/* เปลี่ยนพื้นหลังของ element div ให้เป็นรูปและไม่ให้แสดงซ้ำ ทำให้รูปเต็ม div ใช้ margin ปรับกึ่งกลาง
+overflow: auto; คือทำให้รูปภาพที่แสดงไม่เกินขนาดของ element div
+background-position: 50% 50%; คือ ปรับการแสดงตามแนวแกน x y ของรูป 
+*/
+#toppicImg {
+    max-width: 100%;
+    height: 200px;
+    background: url(../img/title2.png) no-repeat;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    overflow: auto;
+    background-size: cover;
+}
+#ironmanCover {
+    width: 100%;
+    height: 500px;
+    background: url(../img/ironman_cover.jpg) no-repeat;
+    margin: 0 auto;
+    background-position: 0% 94%;
+    background-size: cover;
+}
+#capCover {
+    width: 100%;
+    height: 500px;
+    background: url(../img/cap_cover4.jpg) no-repeat;
+    margin: 0 auto;
+    background-position: 0% 100%;
+    background-size: cover;
+}
+#first-img {
+    width: 100%;
+    height: 500px;
+    background: url(../img/iron_man.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 50% 31%;
+}
+#second-img {
+    width: 100%;
+    height: 660px;
+    background: url(../img/cap_buck.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+
+/* ปรับขนาดและทำให้ตัวหนังสืออยู่กึ่งกลาง กำหนดระยะห่างด้านนอก */
+#content div h1 {
+    text-align:center;
+    margin: 40px 0px;
+    font-size: 50px;
+}
+
+/* ปรับฟอนต์ กำหนดให้ element p ทุกตัวที่อยู่ในคลาส paragraph ซึ่งเป็นลูกของ element div class ironMan มีระยะห่างด้านนอกตามที่ปรับ  */
+.ironMan .paragraph > p, .captainAmerica .paragraph > p {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+/* กำหนดความกว้างให้ชิดจอ ความสูงตามคอนเทนต์ ปรับระยะห่างด้านใน กำหนดสีพื้นหลังและฟอนต์ */
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* กำหนดขนาดของ element div class linkPage กำหนดพื้นหลังและฟอนต์ ปรับกึ่งกลางโดย margin และกึ่งกลางฟอนต์โดย text-align */
+.linkPage{
+    width: 180px;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 20px;
+    
+}
+
+/* เมื่อนำเมาส์ไปวางบน div กำหนดให้เมาส์เป็น pointer และเพิ่มขอบสีแดงด้านล่าง */
+.linkPage:hover{
+    cursor: pointer;
+    border-bottom: 5px solid red;
+}
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Script -->
+    <script>
+        function warp(params) {
+            window.location.replace(params);
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>#Assignment 8</h1>
+        </header>
+        <nav>
+            <h1>Mysite</h1>
+            <hr>
+            <ul id="nav">
+                <li onclick="warp('./homePage.html')"><a href="./homePage.html">การออกแบบเว็บไซต์</a></li>
+                <li onclick="warp('./technique.html')"><a href="./technique.html">เทคนิคการออกแบบ</a></li>
+                <li onclick="warp('./process.html')"><a href="./process.html">การพัฒนาเว็บไซต์</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div>
+                <section>
+
+                    <img id="poster2"
+                        src="https://img.freepik.com/free-vector/web-design-illustration-with-icons-concept-creating-websites-creating-logos-more_613284-492.jpg?w=740&t=st=1661953921~exp=1661954521~hmac=1ee3b09cb81855a68907a803d0346d01bae2e28e746539d6a269624d587db312"
+                        alt="poster">
+                        <h1>เทคนิคการออกแบบเว็บเพจให้แสดงผลได้เร็ว</h1>
+                    <div id="text-wrap">
+                        <p>
+                            ดวงพร เกี๋ยงคำ และวงศ์ประชา จันทร์สมวงศ์ (2546) กล่าวไว้ว่า
+                            เทคนิคการออกแบบเว็บเพจให้แสดงผลได้เร็ว มีหลายวิธี เช่น <br>
+                            ลดขนาดของไฟล์ HTML โดยกำจัดคำสั่ง หรือแท็ก tag ที่ไม่จำเป็นออกไป
+                            ใช้ตัวอักษร และลิงค์แบบ html
+                            ใช้ graphic ให้ถูกประเภท
+                            ตัดแบ่งภาพที่มีขนาดใหญ่ให้เป็นภาพชิ้นเล็กๆ
+                            นำกราฟิกกลับมาใช้ใหม่ในหน้าอื่นๆ
+                            กำหนดค่า Width และ Height ของกราฟิก
+                            กำหนดค่า Alt ของกราฟิก
+                            ใช้ style sheet ในการจัดรูปแบบ
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        
+
+        <footer>
+            <p>643020423-0 | อริญชวุธ กัลยานาม</p>
+        </footer>
+    </div>
+</body>
+
+</html>

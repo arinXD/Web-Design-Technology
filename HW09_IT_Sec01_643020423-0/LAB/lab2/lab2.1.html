@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, h1{
+            margin: 0;
+        }
+        h1, .text2, footer{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, footer{
+            background-color: rgb(175, 208, 252);
+        }
+        h1{
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        .text2{
+            color: gray;
+            word-spacing: 0.5em;
+            text-transform: capitalize;
+        }
+        .text2::first-letter,.text3::first-letter{
+            font-size: x-large;
+            font-style: italic;
+            color: blue;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span#text3{
+            text-decoration: line-through;
+        }
+        footer{
+            color: blue;
+            text-decoration: underline;
+            text-align: center;
+            font-size: 1.5em;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is using font "impact" size 2 em.</h1>
+    <p class="text2">
+        font-family : Arial, Helvetica, sans-erif <br>
+        a first charater is Big and Italic font. <br>
+        Color blue of first characterbut all content on this paragrahp show geay color. word spacibg:0.5em
+    </p>
+    <p class="text3">
+        I using text indent to show this paragraph. <br>
+        how to code CSS <span id="text3">and html</span>
+        on this example.
+    </p>
+    <footer>web design technology</footer>
+</body>
+
+</html>

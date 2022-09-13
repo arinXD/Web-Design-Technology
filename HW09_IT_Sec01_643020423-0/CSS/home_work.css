@@ -1,0 +1,98 @@
+.homework-cover {
+    background: url(https://img.freepik.com/free-photo/book-with-green-board-background_1150-3836.jpg?w=740&t=st=1662477566~exp=1662478166~hmac=95d0768293a7496a1772a8605058cf072f467765d3f31b7a69a823be453ea7cb) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 300px;
+    filter: blur(1px);
+    float: left;
+    z-index: 0;
+}
+
+.homework-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 300px;
+    font-size: 100px;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.img.a {
+    background: url(../IMG/hw1.png) no-repeat;
+    width: 400px;
+    height: 186px;
+    background-size: contain;
+}
+
+.img.b {
+    background: url(../IMG/hw2.png) no-repeat;
+    width: 400px;
+    height: 186px;
+    background-size: contain;
+}
+
+.img.c {
+    background: url(../IMG/hw3.png) no-repeat;
+    width: 400px;
+    height: 186px;
+    background-size: contain;
+}
+.img.d {
+    background: url(../IMG/hw4.png) no-repeat;
+    width: 400px;
+    height: 186px;
+    background-size: contain;
+}
+.img{
+    transform: 0.2s;
+    border-radius: 5px;
+}
+.img:hover{
+    cursor: pointer;
+    transform: scale(0.995);
+}
+
+article {
+    padding: 100px;
+    clear: both;
+    z-index: 3;
+}
+
+article>h1 {
+    margin: 0 0 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+}
+
+section:nth-of-type(1) {
+    margin-bottom: 58px;
+
+}
+
+section div p {
+    padding: 15px;
+    color: #0F3D3E;
+    word-break: break-all;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    
+}
+section div p:hover{
+    cursor: pointer;
+    color: #83b2b3;
+    text-decoration: underline;
+}
